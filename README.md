@@ -1,20 +1,22 @@
-YouTube Trends Analysis
+#YouTube Trends Analysis
 
 
-Our Goal
+#Our Goal
 Help marketing agencies and content creators better understand the latest trends on YouTube & find what drives views and virality.
 
-Data Source
+#Data Source
 Kaggle dataset collected from YouTube API
 Included country information from United States, Great Britain, Canada, Germany, France, South Korea, Japan, Russia, and Mexico
 Date range was Nov. 2017- June 2018
 Time zone used was GMT +1 (Glasgow, Great Britain)
-Our Process and Tools
+
+#Our Process and Tools
 Extract- Kaggle, Excel
 Transform- Python, Jupyter Notebook, SQL, Tableau
 Load- Tableau
 Machine Learning- Google Colab, XGBoost
-Questions we looked to answer
+
+#Questions we looked to answer
 What types of trending content are people most likely to watch and/or engage with?
 
 Are there specific channels/events marketers should work with/sponsor?
@@ -23,7 +25,7 @@ When should content creators post their videos to have a higher chance of trendi
 
 Can we statistically prove the most important factors that go into making a video trend?
 
-What did we find?
+#What did we find?
 People watch music/entertainment, but engage with causes they care about
 
 Trending happens immediately, but chances are better posting on a weekday.
@@ -34,7 +36,8 @@ Music drives views, causes drive engagement
 
 First 24 hours are key
 
-Machine Learning
+#Machine Learning
+
 Instead of looking up what increases views, we wanted to see what increased engagement. Therefore, we focused on how to increase 'Like' count
 Using regression methods like Lasso, Elastic Net, Ridge, and XGBoost, we were able to confine our variables to a 78-83% R square which gives us confidence in the fit of the line.
 View count, dislike count, comment count, number of tags, tags in description, and external website links in description all factored into predicting higher 'Like' count.
